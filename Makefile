@@ -6,11 +6,11 @@
 #    By: pbondoer <pbondoer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/02/22 23:12:10 by pbondoer          #+#    #+#              #
-#    Updated: 2017/02/03 02:37:32 by pbondoer         ###   ########.fr        #
+#    Updated: 2017/02/03 02:44:22 by pbondoer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-include mlx.mk
+include libmlx.mk
 
 all: $(MLX_LIB)
 
