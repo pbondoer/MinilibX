@@ -6,7 +6,7 @@
 #    By: pbondoer <pbondoer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/02/22 23:12:10 by pbondoer          #+#    #+#              #
-#    Updated: 2016/12/27 20:06:58 by pbondoer         ###   ########.fr        #
+#    Updated: 2017/02/03 02:37:32 by pbondoer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,9 +19,11 @@ $(MLX_LIB):
 	cp $(MLX_LIB) $(MLX_NAME)
 
 clean:
-	rm -f $(MLX_NAME)
 	make -C $(MLX_DIR) clean
+	rm -f $(MLX_NAME)
 
 fclean: clean
 
-re: fclean all
+re:
+	@$(MAKE) clean --no-print-directory
+	@$(MAKE) all --no-print-directory

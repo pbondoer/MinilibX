@@ -19,4 +19,6 @@ do_configure	:
 clean	:
 	./configure clean
 
-re	: clean all
+re	:
+	@$(MAKE) clean --no-print-directory
+	@$(MAKE) all --no-print-directory
