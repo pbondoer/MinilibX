@@ -51,4 +51,4 @@ LIB_INC		:=
 endif
 
 LIB_LNK		+= $(MLX_LNK)
-LIB_INC		+= $(LIB_INC)
+LIB_INC		+= $(MLX_INC)

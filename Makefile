@@ -12,14 +12,16 @@
 
 include libmlx.mk
 
-all: $(MLX_LIB)
+all: $(MLX_NAME)
+
+$(MLX_NAME): $(MLX_LIB)
+	ln -s $^ $@
 
 $(MLX_LIB):
 	@make -C $(MLX_DIR)
-	cp $(MLX_LIB) $(MLX_NAME)
 
 clean:
-	make -C $(MLX_DIR) clean
+	@make -C $(MLX_DIR) clean
 	rm -f $(MLX_NAME)
 
 fclean: clean
