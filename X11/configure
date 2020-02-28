@@ -50,6 +50,8 @@ do
 done
 
 
+conf_inc=/usr/include/X11
+
 if [ "$conf_inc" = "NO" ]; then
 	echo "Can't find a suitable X11 include directory."
 	exit

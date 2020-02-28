@@ -6,7 +6,7 @@
 #    By: pbondoer <pbondoer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/27 20:07:03 by pbondoer          #+#    #+#              #
-#    Updated: 2017/02/03 03:02:20 by pbondoer         ###   ########.fr        #
+#    Updated: 2020/01/17 11:00:25 by abe              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ MLX_LNK		:= -framework OpenGL -framework AppKit
 endif
 
 MLX_LNK		+= -L $(MLX_DIR) -l mlx
-MLX_INC		:= -I $(MLX_DIR)
+MLX_INC		:= -I $(MLX_DIR) -I /usr/include/X11 -I /usr/include
 MLX_LIB		:= $(addprefix $(MLX_DIR),$(MLX_NAME))
 
 # Global variables for compilation
